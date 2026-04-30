@@ -3,27 +3,31 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PULL - Clothing Brand</title>
+<title>PULL - Fashion Brand</title>
 
 <style>
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #f8f8f8;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
 }
 
+/* HEADER */
 header {
-  background: black;
+  background: #111;
   color: white;
-  padding: 20px;
   text-align: center;
-  letter-spacing: 5px;
+  padding: 25px;
+  font-size: 28px;
+  letter-spacing: 6px;
 }
 
+/* NAV */
 nav {
-  background: #222;
   display: flex;
   justify-content: center;
+  background: #222;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -33,49 +37,77 @@ nav a {
 }
 
 nav a:hover {
-  background: #555;
+  background: #444;
 }
 
+/* HERO */
 .hero {
-  background: url('https://images.unsplash.com/photo-1520975922324-1c2f9c6e4b0b');
-  background-size: cover;
-  height: 400px;
-  color: white;
+  height: 420px;
+  background: url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd49') center/cover;
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 40px;
+  justify-content: center;
+  color: white;
+  font-size: 42px;
   font-weight: bold;
+  text-shadow: 2px 2px 10px black;
 }
 
+/* SECTION */
 .section {
-  padding: 40px;
+  padding: 50px 20px;
   text-align: center;
 }
 
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+/* PRODUCTS */
 .products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
 }
 
 .card {
   background: white;
-  margin: 15px;
-  padding: 15px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 260px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card img {
   width: 100%;
+  height: 280px;
+  object-fit: cover;
 }
 
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  padding: 0 10px 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* FOOTER */
 footer {
-  background: black;
+  background: #111;
   color: white;
   text-align: center;
   padding: 20px;
+  margin-top: 40px;
 }
 </style>
 
@@ -84,73 +116,79 @@ footer {
 <body>
 
 <header>
-  PULL
+PULL
 </header>
 
 <nav>
-  <a href="#">Home</a>
-  <a href="#baloch">Baloch Style</a>
-  <a href="#traditional">Traditional</a>
-  <a href="#contact">Contact</a>
+<a href="#">Home</a>
+<a href="#baloch">Baloch Style</a>
+<a href="#traditional">Traditional</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
-  Style Meets Culture
+Style Meets Culture
 </div>
 
+<!-- BALOCH -->
 <div class="section" id="baloch">
-  <h2>Balochistan Style</h2>
-  <p>Inspired by traditional embroidery and loose cultural fits.</p>
+<h2>Balochistan Collection</h2>
+<p>Traditional embroidery meets modern fashion</p>
 
-  <div class="products">
-    <div class="card">
-      <img src="https://i.imgur.com/jw7W7xF.jpg">
-      <h3>Embroidered Balochi Dress</h3>
-      <p>Rich handmade embroidery with cultural patterns.</p>
-    </div>
+<div class="products">
 
-    <div class="card">
-      <img src="https://i.imgur.com/8Km9tLL.jpg">
-      <h3>Traditional Baloch Suit</h3>
-      <p>Loose and elegant with classic Baloch identity.</p>
-    </div>
-
-    <div class="card">
-      <img src="https://i.imgur.com/NT9QK8F.jpg">
-      <h3>Balochi Cap & Style</h3>
-      <p>Accessories inspired by heritage fashion.</p>
-    </div>
-  </div>
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Balochi_dress.jpg">
+<h3>Balochi Dress</h3>
+<p>Hand embroidered cultural dress.</p>
 </div>
 
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/32/Baloch_traditional_clothing.jpg">
+<h3>Baloch Suit</h3>
+<p>Elegant traditional outfit.</p>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Balochi_cap.jpg">
+<h3>Balochi Cap</h3>
+<p>Heritage cultural accessory.</p>
+</div>
+
+</div>
+</div>
+
+<!-- TRADITIONAL -->
 <div class="section" id="traditional">
-  <h2>Traditional Collection</h2>
-  <p>Classic South Asian fashion redefined.</p>
+<h2>Traditional Collection</h2>
+<p>South Asian timeless fashion</p>
 
-  <div class="products">
-    <div class="card">
-      <img src="https://i.imgur.com/5Aqgz7o.jpg">
-      <h3>Shalwar Kameez</h3>
-      <p>Elegant everyday traditional wear.</p>
-    </div>
+<div class="products">
 
-    <div class="card">
-      <img src="https://i.imgur.com/2cKX7aN.jpg">
-      <h3>Kurta Style</h3>
-      <p>Modern touch with traditional roots.</p>
-    </div>
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Shalwar_kameez.jpg">
+<h3>Shalwar Kameez</h3>
+<p>Classic everyday wear.</p>
+</div>
 
-    <div class="card">
-      <img src="https://i.imgur.com/JVZ6Q9S.jpg">
-      <h3>Wedding Traditional Wear</h3>
-      <p>Luxury fabric with cultural beauty.</p>
-    </div>
-  </div>
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/Kurta.jpg">
+<h3>Kurta Style</h3>
+<p>Modern traditional fusion.</p>
+</div>
+
+<div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Pakistani_wedding_dress.jpg">
+<h3>Wedding Dress</h3>
+<p>Luxury cultural outfit.</p>
+</div>
+
+</div>
 </div>
 
 <footer id="contact">
-  <p>© 2026 PULL Clothing Brand</p>
-  <p>Email: pullfashion@gmail.com</p>
+<p>© 2026 PULL Fashion Brand</p>
+<p>Contact: pullfashion@gmail.com</p>
 </footer>
 
 </body>
